@@ -5,16 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="auto-complete.css" />
     <title>Real Estate App</title>
   </head>
   <body>
-    <form>
-      <input type="text" />
-      <br />
-      <br />
-      <button>Search</button>
-    </form>
+   <!--Navbar-->
+    <nav class="top-nav w-full px-3 py-1 bg-white">
+      <h3 class="text-4xl font-serif text-lg text-gray-800 font-medium">
+        <span class="text-red-700">real</span>tor.com<span class="text-xs mt-1">&reg</span>
+      </h3>
+      </nav>
+      <!--Navbar end-->
+    <div class="w-full h-auto relative">
+      <img
+        src="./hp-takeover-desktop.jpg"
+        class="object-cover w-full h-full"
+        alt="company-image"
+      ></img>
+ <div class="top-container w-4/5 mx-auto absolute inset-x-0 top-0 mt-20">
+  <h2 class="text-center font-sans font-bold text-white text-5xl mt-0 mb-3">Let`s find a home that`s perfect for you.</h2>
+  <h5 class="text-center font-sans font-semibold text-white text-2xl mb-8">
+    Search confidently with your trusted source of homes for sale or rent</h5>
+    <!--Form-->
+      <form class="w-6/12 mx-auto border-black">
+        <div class="flex items-center">
+        <input name="search" type="text" class="w-5/6 h-12 rounded-l-lg text-grey py-2 px-4 "></input>
+        <button class="w-1/6 h-12 bg-red-700 hover:bg-red-800 border rounded-r-lg text-white font-bold py-2 px-4 font-sans">Search</button>
+      </div>
+      </form>
+    <!--Form end-->
+  </div> 
+</div>
+<!--Property container-->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2" id="property-container"></div>
+<!--Property container end -->
 
+  
+
+
+    <script src="auto-complete.min.js"></script>
     <script src="build/app.bundle.js"></script>
   </body>
 </html>

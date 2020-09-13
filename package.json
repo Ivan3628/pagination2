@@ -4,6 +4,7 @@
   "description": "Starter pack for compiling ES6+ apps to ES5",
   "main": "app.js",
   "scripts": {
+    "build:css": "tailwind build src/style.css -o ./style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
     "build": "webpack --mode production --progress"
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "tailwindcss": "^1.8.4",
     "unirest": "^0.6.0"
   }
 }
